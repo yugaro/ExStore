@@ -1,69 +1,86 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
-  StyleSheet, TextInput, View, KeyboardAvoidingView, Platform,
+  StyleSheet, View, Text,
 } from 'react-native';
-// import KeyboardSafeView from '../components/KeyboardSafeView';
-import CircleButton from '../components/CircleButton';
 
 export default function TodayScreen() {
-  // const { navigation } = props;
-  const [bodyText, setBodyText] = useState('');
-
-  // const handlePress = () => {
-  //   const { currentUser } = firebase.auth();
-  //   const db = firebase.firestore();
-  //   const ref = db.collection(`users/${currentUser.uid}/memos`);
-  //   ref.add({
-  //     bodyText,
-  //     updatedAt: new Date(),
-  //   })
-  //     .then(() => {
-  //       navigation.goBack();
-  //     })
-  //     .catch((error) => {
-  //       const errorMsg = translateErrors(error.code);
-  //       Alert.alert(errorMsg.title, errorMsg.description);
-  //     });
-  // };
-
   return (
-    <KeyboardAvoidingView
-      behavior={Platform.OS === 'ios' ? 'padding' : null}
-      style={styles.container}
-    >
-      {/* <TouchableWithoutFeedback onPress={Keyboard.dismiss}> */}
-      <View style={styles.inputContainer}>
-        <TextInput
-          value={bodyText}
-          multiline
-          style={styles.input}
-          onChangeText={(text) => { setBodyText(text); }}
-          autoFocus
-          autoCapitalize="none"
-        />
+    <View style={styles.container}>
+      <View>
+        <View>
+          <Text> WENDNESDAY, APRIL 15 </Text>
+          <Text> Today </Text>
+        </View>
+        <View>
+          <Text>face</Text>
+        </View>
       </View>
-      {/* </TouchableWithoutFeedback> */}
-      <CircleButton
-        name="check"
-        // onPress={handlePress}
-      />
-    </KeyboardAvoidingView>
+      <View>
+        <View>
+          <View>
+            <Text> HOW TO </Text>
+            <Text> 忙しい朝の情報収集術 </Text>
+          </View>
+          <View>
+            <Text>
+              天候や鉄道の状況など家を出るまでに効率よく情報収集
+            </Text>
+          </View>
+        </View>
+        <View>
+          <View>
+            <Text> STAY HOME </Text>
+            <Text> 筋力トレーニングにチャレンジ </Text>
+          </View>
+          <View>
+            <Text> 運動不足を解消しましょう。道具は必要ありません!</Text>
+          </View>
+        </View>
+        <View>
+          <View>
+            <Text> GAMES </Text>
+            <Text> Top Apple </Text>
+          </View>
+        </View>
+        <View>
+          <View>
+            <Text> THE DAILY LIST </Text>
+            <Text> Defy gravity</Text>
+          </View>
+          <View>
+            <Text> Dandara Trail of Fear Edition</Text>
+            <Text> A Metrodvania Advent</Text>
+          </View>
+          <View>
+            <Text> Piloteer</Text>
+            <Text> Adventure</Text>
+          </View>
+          <View>
+            <Text> Grab Lab</Text>
+            <Text> Silly Gravity</Text>
+          </View>
+          <View>
+            <Text> Teslagrad Lab </Text>
+            <Text> A hand-drawn </Text>
+          </View>
+        </View>
+        <View>
+          <View>
+            <Text> HOW TO </Text>
+            <Text> 安全で簡単なパスワード管理</Text>
+          </View>
+          <View>
+            <Text> ハスワード管理アプリを利用してサービスごとにパスワードを設定しよう</Text>
+          </View>
+        </View>
+      </View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  inputContainer: {
-    paddingHorizontal: 27,
-    paddingVertical: 32,
-    flex: 1,
-  },
-  input: {
-    flex: 1,
-    textAlignVertical: 'top',
-    fontSize: 16,
-    lineHeight: 24,
+    backgroundColor: '#fff',
   },
 });
