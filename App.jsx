@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { CardStyleInterpolators } from '@react-navigation/stack';
 import AppDetailScreen from './src/screens/AppDetailScreen';
 import AppsScreen from './src/screens/AppsScreen';
 import ArcadeScreen from './src/screens/ArcadeScreen';
@@ -16,6 +17,16 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         initialRouteName="Today"
+        screenOptions={{
+          headerStyle: { backgroundColor: '#000' },
+          headerTiteStyle: { color: '#ffffff' },
+          headerTitle: 'Ex Store',
+          headerTintColor: '#ffffff',
+          headerBackTitle: 'Back',
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+          gestureEnabled: true,
+          gestureDirection: 'horizontal',
+        }}
       >
         <Stack.Screen name="AppDetail" component={AppDetailScreen} />
         <Stack.Screen name="Apps" component={AppsScreen} />

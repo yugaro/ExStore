@@ -6,13 +6,13 @@ import {
 export default function TodayScreen() {
   return (
     <View style={styles.container}>
-      <View>
-        <View>
-          <Text> WENDNESDAY, APRIL 15 </Text>
-          <Text> Today </Text>
+      <View style={styles.inner}>
+        <View style={styles.innerLeft}>
+          <Text style={styles.dateLabel}> WENDNESDAY, APRIL 15 </Text>
+          <Text style={styles.innerLabel}> Today </Text>
         </View>
-        <View>
-          <Text>face</Text>
+        <View style={styles.innerRight}>
+          <Text style={styles.faceLabel}> aaa </Text>
         </View>
       </View>
       <View>
@@ -82,5 +82,27 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+  },
+  inner: {
+    paddingHorizontal: 27,
+    paddingVertical: 10,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    backgroundColor: '#000',
+  },
+  dateLabel: {
+    color: '#fff',
+  },
+  innerLabel: {
+    color: '#fff',
+  },
+  faceLabel: {
+    color: '#fff',
+  },
+  innerLeft: {
+    // alignItems: 'flex-start',
+  },
+  innerRight: {
+    // alignItems: 'flex-end',
   },
 });
