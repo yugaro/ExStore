@@ -17,7 +17,7 @@ export default function Icon(props) {
 }
 
 Icon.propTypes = {
-  name: oneOf(['plus', 'delete', 'pencil', 'check']).isRequired,
+  name: oneOf(['YugaOnoueFacePhoto3']).isRequired,
   size: number,
   color: string,
 };

@@ -2,21 +2,14 @@ import React from 'react';
 import {
   StyleSheet, View, Text,
 } from 'react-native';
+import Header from '../components/Header';
 
 export default function TodayScreen() {
   return (
     <View style={styles.container}>
-      <View style={styles.inner}>
-        <View style={styles.innerLeft}>
-          <Text style={styles.dateLabel}> WENDNESDAY, APRIL 15 </Text>
-          <Text style={styles.innerLabel}> Today </Text>
-        </View>
-        <View style={styles.innerRight}>
-          <Text style={styles.faceLabel}> aaa </Text>
-        </View>
-      </View>
-      <View>
-        <View>
+      <Header />
+      <View style={styles.cardContainer}>
+        <View style={styles.cardInner}>
           <View>
             <Text> HOW TO </Text>
             <Text> 忙しい朝の情報収集術 </Text>
@@ -81,28 +74,13 @@ export default function TodayScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
   },
-  inner: {
-    paddingHorizontal: 27,
-    paddingVertical: 10,
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    backgroundColor: '#000',
+  cardContainer: {
+    paddingHorizontal: 20,
   },
-  dateLabel: {
-    color: '#fff',
-  },
-  innerLabel: {
-    color: '#fff',
-  },
-  faceLabel: {
-    color: '#fff',
-  },
-  innerLeft: {
-    // alignItems: 'flex-start',
-  },
-  innerRight: {
-    // alignItems: 'flex-end',
+  cardInner: {
+    backgroundColor: 'blue',
+    // paddingHorizontal: 20,
   },
 });
