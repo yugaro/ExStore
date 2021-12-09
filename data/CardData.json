@@ -1,0 +1,27 @@
+[
+  {
+    "image":"../../assets/Image1.png",
+    "headerLabel": "HOW TO",
+    "title1": "忙しい朝の",
+    "title2": "情報収集術",
+    "description1": "天候や鉄道の状況など",
+    "description2": "家を出るまでに効率よく情報収集"
+  },
+  {
+    "image": "../../assets/Image2.png",
+    "headerLabel": "STAY HOME",
+    "title1": "筋力トレーニングに",
+    "title2": "チャレンジ",
+    "description1": "運動不足を解消しましょう。",
+    "description2": "道具は必要ありません!"
+  },
+  {
+    "image": "../../assets/Image3.png",
+    "headerLabel": "HOW TO",
+    "title1": "安全で簡単な",
+    "title2": "パスワード管理",
+    "description1": "パスワード管理アプリを利用して",
+    "description2": "サービスごとにパスワードを設定しよう"
+  }
+]
+
