@@ -136,13 +136,13 @@ npx eslint --init
 ```
 
 ## 5. Install react navigation
-Install react navigation according to [here](https://reactnavigation.org/docs/getting-started/).
+Install react navigation according to [here](https://reactnavigation.org/docs/5.x/getting-started/).
 ```
-npm install @react-navigation/native
-```
-```
-expo install react-native-screens react-native-safe-area-context
+npm install @react-navigation/native@5.9.8
 ```
 ```
-npm install @react-navigation/native-stack
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+```
+```
+npm install @react-navigation/stack@5.14.9
 ```
