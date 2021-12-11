@@ -7,6 +7,64 @@ Install Git from [here](https://git-scm.com/download/win).
 ```
 git --version
 ```
+## 0.3 Install VScode
+Install Git from [here](https://code.visualstudio.com/download).
+```
+{
+  "files.autoGuessEncoding": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.cursorBlinking": "smooth",
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "Material Theme",
+  "[javascript]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+  },
+  "[typescript]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+  },
+  "[typescriptreact]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+  },
+  "[json]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "tw\\('([^')]*)"
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "autoDocstring.docstringFormat": "google",
+  "vsicons.dontShowNewVersionMessage": true,
+  "files.associations": {
+    "*.rmd": "markdown",
+    "*.js": "javascript",
+    "*.jsx": "javascriptreact",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact",
+  },
+  "material-icon-theme.folders.color": "#90a4ae",
+  "react-native-tools.showUserTips": false,
+  "prettier.requireConfig": true,
+}
+```
 
 ## 1. Install Node.js
 Install Node.js from [here](https://nodejs.org/ja/).
@@ -69,7 +127,7 @@ expo init MyApp --npm
 expo start
 ```
 ## 5. Install eslint
-How to install eslint, click [here](https://eslint.org/docs/user-guide/getting-started).
+Install eslint according to [here](https://eslint.org/docs/user-guide/getting-started).
 ```
 npm install eslint --save-dev
 ```
