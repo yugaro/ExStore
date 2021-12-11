@@ -29,3 +29,18 @@ npm install --global expo-cli
 ```
 expo --version
 ```
+
+## 3. Install Android Studio
+### 3.1
+Install Android Studio from [here](https://developer.android.com/studio/install).
+Android SDK → SDK tools → Select Android SDK Build-Tools and Install it.
+
+### 3.2
+Copy Android SDK Location (ANDROID_SDK_LOCATION). Add new path as
+```
+ANDROID_SDK_LOCATION/platform-tools
+```
+and
+```
+ANDROID_SDK_LOCATION/emulator
+```
