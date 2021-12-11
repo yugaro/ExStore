@@ -59,3 +59,32 @@ emulator @Pixel_3_API_29
 ```
 emulator @Pixel_3_API_29 -dns-server 8.8.8.8
 ```
+
+## 4. Create a new app
+How to set up Expo App, click [here](https://docs.expo.dev/get-started/create-a-new-app/).
+```
+expo init MyApp --npm
+```
+```
+expo start
+```
+## 5. Install eslint
+How to install eslint, click [here](https://eslint.org/docs/user-guide/getting-started).
+```
+npm install eslint --save-dev
+```
+```
+npx eslint --init
+```
+
+## 5. Install react navigation
+Install react navigation according to [here](https://reactnavigation.org/docs/getting-started/).
+```
+npm install @react-navigation/native
+```
+```
+expo install react-native-screens react-native-safe-area-context
+```
+```
+npm install @react-navigation/native-stack
+```
