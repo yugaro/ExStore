@@ -36,11 +36,26 @@ Install Android Studio from [here](https://developer.android.com/studio/install)
 Android SDK → SDK tools → Select Android SDK Build-Tools and Install it.
 
 ### 3.2
-Copy Android SDK Location (ANDROID_SDK_LOCATION). Add new path as
+Copy Android SDK Location (ANDROID_SDK_LOCATION). Add new path to your environment as
 ```
 ANDROID_SDK_LOCATION/platform-tools
 ```
 and
 ```
 ANDROID_SDK_LOCATION/emulator
+```
+```
+adb --version
+```
+
+### 3.3
+Install AVD Manager → Pixcel 3 → Q.
+```
+emulator -list-avds
+```
+```
+emulator @Pixel_3_API_29
+```
+```
+emulator @Pixel_3_API_29 -dns-server 8.8.8.8
 ```
