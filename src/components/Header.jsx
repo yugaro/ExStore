@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   dateLabel: {
-    color: 'rgba(255, 255, 255, 0.7)',
+    color: 'rgba(255, 255, 255, 0.7)e',
     fontSize: 13,
     lineHeight: 15,
   },

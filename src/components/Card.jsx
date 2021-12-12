@@ -3,49 +3,46 @@ import {
   StyleSheet, View, Text, ImageBackground, TouchableOpacity, Alert, FlatList,
 } from 'react-native';
 
-import image1 from '../../assets/Image1.png';
-import image2 from '../../assets/Image2.png';
-import image3 from '../../assets/Image3.png';
+// import image1 from '../../assets/Image1.svg';
+// import image2 from '../../assets/Image2.svg';
+// import image3 from '../../assets/Image3.svg';
+const image = { uri: 'https://reactjs.org/logo-og.png' };
 
-// import CardData from '../../data/CardData.json';
-// const CardData = require('../../data/CardData.json');
-// const Image = require('../../assets/Image1.png');
+const cardData = [
+  {
+    // image: `${image1}`,
+    headerLabel: 'HOW TO',
+    title1: '忙しい朝の',
+    title2: '情報収集術',
+    description1: '天候や鉄道の状況など',
+    description2: '家を出るまでに効率よく情報収集',
+  },
+  {
+    // image: `${image2}`,
+    headerLabel: 'STAY HOME',
+    title1: '筋力トレーニングに',
+    title2: 'チャレンジ',
+    description1: '運動不足を解消しましょう。',
+    description2: '道具は必要ありません!',
+  },
+  {
+    // image: `${image3}`,
+    headerLabel: 'HOW TO',
+    title1: '安全で簡単な',
+    title2: 'パスワード管理',
+    description1: 'パスワード管理アプリを利用して',
+    description2: 'サービスごとにパスワードを設定しよう',
+  },
+];
 
 export default function Card() {
-  const cardData = [
-    {
-      image: `${image1}`,
-      headerLabel: 'HOW TO',
-      title1: '忙しい朝の',
-      title2: '情報収集術',
-      description1: '天候や鉄道の状況など',
-      description2: '家を出るまでに効率よく情報収集',
-    },
-    {
-      image: `${image2}`,
-      headerLabel: 'STAY HOME',
-      title1: '筋力トレーニングに',
-      title2: 'チャレンジ',
-      description1: '運動不足を解消しましょう。',
-      description2: '道具は必要ありません!',
-    },
-    {
-      image: `${image3}`,
-      headerLabel: 'HOW TO',
-      title1: '安全で簡単な',
-      title2: 'パスワード管理',
-      description1: 'パスワード管理アプリを利用して',
-      description2: 'サービスごとにパスワードを設定しよう',
-    },
-  ];
-
   const renderItem = ({ item }) => (
     <TouchableOpacity
       onPress={() => Alert.alert('card !!')}
     >
       <ImageBackground
         style={styles.cardInner}
-        source={item.image}
+        source={image}
         resizeMode="cover"
         imageStyle={{ borderRadius: 15 }}
       >
