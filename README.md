@@ -146,3 +146,5 @@ expo install react-native-gesture-handler react-native-reanimated react-native-s
 ```
 npm install @react-navigation/stack@5.14.9
 ```
+
+
