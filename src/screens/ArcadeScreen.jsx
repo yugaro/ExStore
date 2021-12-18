@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function ArcadeScreen() {
   return (
     <View style={styles.container}>
-      <Text>ArcadeScreen</Text>
+      <Text>Arcade Screen</Text>
     </View>
   );
 }

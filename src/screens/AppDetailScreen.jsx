@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function AppDetailScreen() {
   return (
     <View style={styles.container}>
-      <Text>AppDetailScreen</Text>
+      <Text>App Detail Screen</Text>
     </View>
   );
 }
